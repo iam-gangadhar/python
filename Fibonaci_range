@@ -1,0 +1,23 @@
+#Fibancci Number Printing Given Number Range
+from typing import List
+
+def generateFibonacciNumbers(n: int) -> List[int]:
+    list = [0,1,1]
+    num1 = 0
+    num2 = 1
+    next_num = num2
+    count = 1
+    if n == 1:
+        list = [0]
+        return list
+    elif n== 2:
+        list = [0,1]
+        return list
+    else:
+        while count < n-2:
+            count +=1
+            num1 = num2
+            num2 = next_num
+            next_num = num1 + num2
+            list.append(next_num)
+    return  list
