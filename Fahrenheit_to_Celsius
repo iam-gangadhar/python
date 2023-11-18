@@ -1,0 +1,19 @@
+#Print the floor of the celsius values if they are non-negative else print its ceil value.
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+#Your code goes here
+S = int(input())
+E = int(input())
+W = int(input())
+
+for i in range(S, E + 1, W):
+    temp =((i - 32) * 5 / 9)
+    if temp >= 0:
+        print(i, floor(temp))
+    else:
+        print(i, ceil(temp))
+
+

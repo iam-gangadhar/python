@@ -1,0 +1,13 @@
+#You are given an integer N, your task is to find and return the N'th Fibonacci Number using Matrix Exponentiation
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def fibonacciNumber(n):
+    # Write your code here.
+    mod = 10**9+7
+    a , b = 0, 1
+    for i in range(2, n+1):
+        a, b = b, (a+b)% mod
+    return b

@@ -1,0 +1,8 @@
+#given a number N, print sum of all even numbers from 1 to N
+k = 0
+n = int(input())
+for i in range(n+1):
+    if i%2==0:
+        k += i
+print(k)
+
