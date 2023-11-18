@@ -1,0 +1,8 @@
+# Given an Integer N, return all even numbers between 0 and N in shorted order 
+
+def generateEvenNumbers(n : int) -> list:
+	mylist = []
+	for i in range(0,n+1):
+		if i%2 == 0:
+			mylist.append(i)
+	return mylist
