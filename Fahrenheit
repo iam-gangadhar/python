@@ -1,0 +1,20 @@
+#Given three Values - You need to cconvert all Fahrenheit values from start to end at the gap of last value
+
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+#Your code goes here
+S = int(input())
+E = int(input())
+W = int(input())
+
+def fahrenheit(a,b,c):
+
+    for i in range(a,b+1,c):
+        F = ((i-32)*5)/9
+        print(i,int(F))
+    
+fahrenheit(S,E,W)
+
