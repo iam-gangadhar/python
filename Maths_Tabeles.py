@@ -3,4 +3,4 @@ j=1
 while j<=20:
     k=j*i
     print(" "+str(j)+" x "+str(i)+" =",k)
-    j=j+16
+    j=j+1
