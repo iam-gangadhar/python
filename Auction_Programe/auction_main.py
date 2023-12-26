@@ -34,7 +34,6 @@ while game_on == 'yes':
         winner = ''
         for item in bidders:
             bid_amount = bidders[item]
-            if 
+        
 
-        print(f'The winner is {} with a bid of ${}.')
 
