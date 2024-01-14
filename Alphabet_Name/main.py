@@ -33,9 +33,11 @@ for (key, value) in data.iterrows():
 #TODO 2. Create a list of the phonetic code words from a word that the user inputs.
 
 userinput = input("Enter name to Give Alphabet Abbrivation: ").upper()
+
 user_list = list(userinput)
 
 name = []
+
 for letter in user_list:
     for (key,value) in alphabet_dict.items():
         if key == letter:
