@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sample blog using for loops</h1>
+    {% for data in my_data: %}
+        {% if data["id"] == 2: %}
+            <h1>{{ data["title"] }}</h1>
+            <h2>{{ data["subtitle"] }}</h2>
+        {% endif %}
+    {% endfor %}
+    <!-- <h3>{{my_data[0]}}</h3> -->
+</body>
+</html>

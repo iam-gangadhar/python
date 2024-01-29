@@ -31,6 +31,15 @@ def hello(name):
     mygender = gender["gender"]
     return render_template('about.html', my_name=name_1, my_age=myage, my_gender=mygender)
 
+@app.route("/blog")
+def blog():
+    sample_data = requests.get(url="https://api.npoint.io/4b2dbf19469a3eafee12")
+    sample_d = sample_data.json()
+
+    return render_template("blog.html", my_data=sample_d)
+
+
+
 
 # @app.route("/<name>")
 # def hello(name):
