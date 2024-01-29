@@ -17,9 +17,7 @@
         <div class="card">
             <h2><b>{{ data["title"] }}</b></h2>
             <p class="text">{{data["subtitle"]}} </p>
-            {% if str(page_number) == str(data['id']): %}
-                <p><h4>{{ data["body"] }}</h4></p>
-            {% endif %}
+            <a href="{{ url_for('get_post', num=data.id) }}">Read</a>
         </div>
     </div>
     {% endfor %}
